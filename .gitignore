@@ -1,0 +1,4 @@
+__pycache__/
+.idea/
+btc_log.txt
+django.txt
