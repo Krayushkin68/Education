@@ -31,32 +31,23 @@
                                 <ul>
                                     <li>
                                         <a href="/">Home</a>
-                                        <!--										<ul>-->
-                                        <!--											<li><a href="categories">Categories</a></li>-->
-                                        <!--											<li><a href="product">Product</a></li>-->
-                                        <!--											<li><a href="cart">Cart</a></li>-->
-                                        <!--											<li><a href="checkout">Check out</a></li>-->
-                                        <!--											<li><a href="contact">Contact</a></li>-->
-                                        <!--										</ul>-->
                                     </li>
                                     <li class="hassubs">
-                                        <a href="categories">Categories</a>
+                                        <a href='/' onclick="return false;">Categories</a>
                                         <ul>
-                                            <li><a href="categories">Category 1</a></li>
-                                            <li><a href="categories">Category 2</a></li>
-                                            <li><a href="categories">Category 3</a></li>
-                                            <li><a href="categories">Category 4</a></li>
-                                            <li><a href="categories">Category 5</a></li>
+                                            {%  for el in categories %}
+                                            <li><a href="/categories/{{ el }}">{{ el }}</a></li>
+                                            {% endfor %}
                                         </ul>
                                     </li>
                                     <li><a href="/">All products</a></li>
                                     <li><a href="/">Offers</a></li>
-                                    <li><a href="contact">Contact</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                             </nav>
                             <div class="header_extra ml-auto">
                                 <div class="shopping_cart">
-                                    <a href="cart">
+                                    <a href="/cart">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                              viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;"
@@ -142,37 +133,37 @@
                 </div>
                 <ul class="page_menu_nav menu_mm">
                     <li class="page_menu_item has-children menu_mm">
-                        <a href="index.html">Home<i class="fa fa-angle-down"></i></a>
+                        <a href="/">Home<i class="fa fa-angle-down"></i></a>
                         <ul class="page_menu_selection menu_mm">
-                            <li class="page_menu_item menu_mm"><a href="categories.html">Categories<i
+                            <li class="page_menu_item menu_mm"><a href="categories">Categories<i
                                     class="fa fa-angle-down"></i></a></li>
-                            <li class="page_menu_item menu_mm"><a href="product.html">Product<i
+                            <li class="page_menu_item menu_mm"><a href="product">Product<i
                                     class="fa fa-angle-down"></i></a></li>
-                            <li class="page_menu_item menu_mm"><a href="cart.html">Cart<i class="fa fa-angle-down"></i></a>
+                            <li class="page_menu_item menu_mm"><a href="cart">Cart<i class="fa fa-angle-down"></i></a>
                             </li>
-                            <li class="page_menu_item menu_mm"><a href="checkout.html">Checkout<i
+                            <li class="page_menu_item menu_mm"><a href="checkout">Checkout<i
                                     class="fa fa-angle-down"></i></a></li>
-                            <li class="page_menu_item menu_mm"><a href="contact.html">Contact<i
+                            <li class="page_menu_item menu_mm"><a href="contact">Contact<i
                                     class="fa fa-angle-down"></i></a></li>
                         </ul>
                     </li>
                     <li class="page_menu_item has-children menu_mm">
-                        <a href="categories.html">Categories<i class="fa fa-angle-down"></i></a>
+                        <a href="categories">Categories<i class="fa fa-angle-down"></i></a>
                         <ul class="page_menu_selection menu_mm">
-                            <li class="page_menu_item menu_mm"><a href="categories.html">Category<i
+                            <li class="page_menu_item menu_mm"><a href="categories">Category<i
                                     class="fa fa-angle-down"></i></a></li>
-                            <li class="page_menu_item menu_mm"><a href="categories.html">Category<i
+                            <li class="page_menu_item menu_mm"><a href="categories">Category<i
                                     class="fa fa-angle-down"></i></a></li>
-                            <li class="page_menu_item menu_mm"><a href="categories.html">Category<i
+                            <li class="page_menu_item menu_mm"><a href="categories">Category<i
                                     class="fa fa-angle-down"></i></a></li>
-                            <li class="page_menu_item menu_mm"><a href="categories.html">Category<i
+                            <li class="page_menu_item menu_mm"><a href="categories">Category<i
                                     class="fa fa-angle-down"></i></a></li>
                         </ul>
                     </li>
-                    <li class="page_menu_item menu_mm"><a href="index.html">Accessories<i class="fa fa-angle-down"></i></a>
+                    <li class="page_menu_item menu_mm"><a href="/">Accessories<i class="fa fa-angle-down"></i></a>
                     </li>
-                    <li class="page_menu_item menu_mm"><a href="#">Offers<i class="fa fa-angle-down"></i></a></li>
-                    <li class="page_menu_item menu_mm"><a href="contact.html">Contact<i
+                    <li class="page_menu_item menu_mm"><a href="/">Offers<i class="fa fa-angle-down"></i></a></li>
+                    <li class="page_menu_item menu_mm"><a href="contact">Contact<i
                             class="fa fa-angle-down"></i></a></li>
                 </ul>
             </div>
@@ -203,7 +194,7 @@
             <div class="row">
                 <div class="col">
                     <div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-                        <div class="footer_logo"><a href="#">Sublime.</a></div>
+                        <div class="footer_logo"><a href="/">Sublime.</a></div>
                         <div class="copyright ml-auto mr-auto">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;<script>document.write(new Date().getFullYear());</script>

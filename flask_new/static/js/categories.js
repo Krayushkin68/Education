@@ -200,12 +200,12 @@ $(document).ready(function()
 	            		var priceEle = $(itemElement).find('.product_price').text().replace( '$', '' );
 	            		return parseFloat(priceEle);
 	            	},
-	            	name: '.product_name',
+	            	name: '.product_title',
 	            	stars: function(itemElement)
 	            	{
-	            		var starsEle = $(itemElement).find('.rating');
-	            		var stars = starsEle.attr("data-rating");
-	            		return stars;
+	            		var starsEle = $(itemElement).find('.product_title')
+	            		// var stars = starsEle.attr("data-rating");
+	            		return starsEle.text();
 	            	}
 	            },
 	            animationOptions:
