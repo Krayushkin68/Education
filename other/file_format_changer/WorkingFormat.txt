@@ -1,0 +1,8 @@
+* Transaktionsrapport Period 2021-09-05 – 2021-12-05 Skapad 2021-12-05 12:46
+Radnummer	Clearingnummer	Kontonummer	Produkt	Valuta	Bokfdag	Transdag	Valutadag	Referens	Text	Belopp	Saldo
+1	83279	9039278420	Företagskonto	SEK	2021-12-06	2021-12-04	2021-12-04	Däck  Fälg	Bg-bet. via internet	-920,00	5773,61
+2	83279	9039278420	Företagskonto	SEK	2021-12-03	2021-12-02	2021-12-02	Investering i do	Överföring via internet	-100000,00	6693,61
+3	83279	9039278420	Företagskonto	SEK	2021-12-02	2021-12-02	2021-12-03	6634380 NON	Insättning	100000,00	106693,61
+4	83279	9039278420	Företagskonto	SEK	2021-11-30	2021-11-30	2021-11-30	Transportstyrels	Bg-bet. via internet	-425,00	6693,61
+5	83279	9039278420	Företagskonto	SEK	2021-11-29	2021-11-29	2021-11-29	TRÄNGSELSKAT	Autogiro	-217,00	7118,61
+6	83279	9039278420	Företagskonto	SEK	2021-11-26	2021-11-26	2021-11-26	Investering i do	Överföring via internet	-60000,00	7335,61

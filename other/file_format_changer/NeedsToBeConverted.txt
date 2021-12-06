@@ -1,0 +1,5 @@
+* Transaktioner Period 2021-01-01–2021-06-30 Skapad 2021-12-05 12:19 CET
+Radnummer,Clearingnummer,Kontonummer,Produkt,Valuta,Bokföringsdag,Transaktionsdag,Valutadag,Referens,Beskrivning,Belopp,Bokfört saldo
+1,83279,9130844799,"Privatkonto",SEK,2021-06-30,2021-06-30,2021-06-30,"SBAB","SBAB",-7932.00,100986.82
+2,83279,9130844799,"Privatkonto",SEK,2021-06-30,2021-06-30,2021-06-30,"ÖSTERÅKER VA","ÖSTERÅKER VA",-3327.00,108918.82
+39,83279,9130844799,"Privatkonto",SEK,2021-06-17,2021-06-17,2021-06-17,"EPH Stlm North,","EPH Stlm North,",-1.30,133072.55
