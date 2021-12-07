@@ -1,5 +1,5 @@
-* Transaktioner Period 2021-07-01–2021-12-06 Skapad 2021-12-06 23:29 CET
-Radnummer	Clearingnummer	Kontonummer	Produkt	Valuta	Bokfцringsdag	Transaktionsdag	Valutadag	Referens	Beskrivning	Belopp	Bokfцrt saldo
+* Transaktionsrapport Period 2021-09-05 вЂ“ 2021-12-05 Skapad 2021-12-05 14:36
+Radnr	Clnr	Kontonr	Produkt	Valuta	Bokfdag	Transdag	Valutadag	Referens	Text	Belopp	Saldo
 1	83279	9130844799	Privatkonto	SEK	2021-12-06	2021-12-06	2021-12-06	ICA KVANTUM AKER	ICA KVANTUM AKER	-47,14	6467,03
 2	83279	9130844799	Privatkonto	SEK	2021-12-06	2021-12-06	2021-12-06	SUBWAY AKERSBERG	SUBWAY AKERSBERG	-83,00	6514,17
 3	83279	9130844799	Privatkonto	SEK	2021-12-06	2021-12-05	2021-12-05	PSN*xn--smlandsg	PSN*xn--smlandsg	-990,00	6597,17

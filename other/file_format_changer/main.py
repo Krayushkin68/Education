@@ -14,16 +14,12 @@ def replace_shwedish(text):
     return text
 
 
-def reformat_file(input_filename, output_filename):
+def reformat_file(input_filename, output_filename, header_filename):
     with open(input_filename, 'rt', encoding='windows-1251') as f:
         data = f.read()
 
     # data = replace_shwedish(data)     # Can be enabled to replace incorrect letters
-    data = data.splitlines()
-    start_line = data[0]
-    header = data[1].strip().split(',')
-
-    data = data[2:]
+    data = data.splitlines()[2:]
     parsed_data = []
     for row in data:
         start_idx = 0
@@ -49,15 +45,15 @@ def reformat_file(input_filename, output_filename):
                 break
         parsed_data.append(row_elements)
 
+    head = open(header_filename, 'rt').readlines()[:2]
     with open(output_filename, 'wt', encoding='utf-8') as f:
-        f.write(start_line+'\n')
-        f.write('\t'.join(header)+'\n')
+        f.write(''.join(head) + '\n')
         for el in parsed_data:
             f.write('\t'.join(el)+'\n')
 
 
 if __name__ == '__main__':
-    reformat_file('From.txt', 'Output.txt')
+    reformat_file('From.txt', 'Output.txt', 'HeaderRows.txt')
 
 
 

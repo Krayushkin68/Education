@@ -1,0 +1,2 @@
+* Transaktionsrapport Period 2021-09-05 – 2021-12-05 Skapad 2021-12-05 14:36
+Radnr	Clnr	Kontonr	Produkt	Valuta	Bokfdag	Transdag	Valutadag	Referens	Text	Belopp	Saldo
