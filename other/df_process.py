@@ -1,4 +1,5 @@
 import pandas as pd
+
 from time import time
 
 start = time()
@@ -25,7 +26,6 @@ for num in range(len(df)):
     hair.append(l5[0])
     haircolour.append(' '.join(l5[1:]))
 
-
 df.insert(2, 'Skin', skin)
 df.insert(3, 'Face', face)
 df.insert(4, 'Eyes', eyes)
@@ -35,4 +35,4 @@ df.insert(11, 'Haircolour', haircolour)
 
 df.to_excel(r'data\new_df.xlsx')
 
-print(f'Execution time: {time()-start:.2f}')
+print(f'Execution time: {time() - start:.2f}')

@@ -1,4 +1,5 @@
 import pandas as pd
+
 data = pd.read_csv('data/budget_data.csv')
 total_month = len(data)
 total = data['Profit/Losses'].sum()

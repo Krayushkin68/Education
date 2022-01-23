@@ -1,7 +1,6 @@
 import pandas as pd
 
 df = pd.read_csv('data/tmdbmovies.csv')
-# print(df)
 
 
 def insert_row(dataframe, row, index):
@@ -32,6 +31,3 @@ for i in df.iterrows():
         new_df = pd.concat([new_df, pd.DataFrame(i[1]).T])
 
 new_df = new_df.reset_index(drop=True)
-print(df.loc[7:20, ['original_title', 'director']])
-print(new_df.loc[7:20, ['original_title', 'director']])
-

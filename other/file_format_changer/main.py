@@ -31,13 +31,13 @@ def reformat_file(input_filename, output_filename, header_filename):
                     el = row[start_idx:cur_idx].strip('"')
                     el = el.replace('.', ',') if isfloat(el) else el
                     row_elements.append(el)
-                    start_idx = cur_idx+1
+                    start_idx = cur_idx + 1
                 else:
                     quote_end_idx = row.find('",', start_idx)
-                    el = row[start_idx+1:quote_end_idx].strip('"')
+                    el = row[start_idx + 1:quote_end_idx].strip('"')
                     el = el.replace('.', ',') if isfloat(el) else el
                     row_elements.append(el)
-                    start_idx = quote_end_idx+2
+                    start_idx = quote_end_idx + 2
             else:
                 el = row[start_idx:].strip('"')
                 el = el.replace('.', ',') if isfloat(el) else el
@@ -49,12 +49,8 @@ def reformat_file(input_filename, output_filename, header_filename):
     with open(output_filename, 'wt', encoding='utf-8') as f:
         f.write(''.join(head) + '\n')
         for el in parsed_data:
-            f.write('\t'.join(el)+'\n')
+            f.write('\t'.join(el) + '\n')
 
 
 if __name__ == '__main__':
     reformat_file('From.txt', 'Output.txt', 'HeaderRows.txt')
-
-
-
-

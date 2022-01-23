@@ -49,7 +49,7 @@ class PC:
         # return s
 
     def to_jsons(self):
-        jsons = {'__PC__':True, 'Name':self.name, 'Parts':self.parts}
+        jsons = {'__PC__': True, 'Name': self.name, 'Parts': self.parts}
         return jsons
 
     def from_json(self, fname='pc.json'):
@@ -87,7 +87,7 @@ def pc_from_json(fname='pc.json'):
 
 if __name__ == '__main__':
     print('Команды:\n'
-          'pc = PC(<name>) - создать пк\n'  
+          'pc = PC(<name>) - создать пк\n'
           'pc.enter_parts() - ввести комплектующие пк\n'
           'pc.show() - показать состав пк\n'
           'pc.price() - цена пк\n'

@@ -1,5 +1,5 @@
-import sqlite3
 import datetime
+import sqlite3
 
 TIMEZONE = 3
 
@@ -15,7 +15,7 @@ def date_to_timestamp(date):
 
 
 def check_url(con, cursor, url, visit_time):
-    cursor.execute("select id, visit_count, last_visit_time from urls where url = (?)", (url, ))
+    cursor.execute("select id, visit_count, last_visit_time from urls where url = (?)", (url,))
     res = cursor.fetchone()
     print(res)
     if res:
@@ -24,7 +24,7 @@ def check_url(con, cursor, url, visit_time):
         last_visit_time = res[2]
         if timestamp_to_date(last_visit_time) < visit_time:
             cursor.execute("update urls set visit_count = (?), last_visit_time = (?) where id = (?)",
-                           (visit_count+1, date_to_timestamp(visit_time), id))
+                           (visit_count + 1, date_to_timestamp(visit_time), id))
             con.commit()
         else:
             cursor.execute("update urls set visit_count = (?) where id = (?)",

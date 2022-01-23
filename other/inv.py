@@ -1,6 +1,7 @@
 import base64
 import hashlib
-from  cryptography import  fernet
+
+from cryptography import fernet
 
 
 class Case:
@@ -62,11 +63,12 @@ class Invest:
     def sale(self, printer=True):
         if self.change[0] == '+':
             proc = float(self.change[1:])
-            sum_proc = self.cost*0.003
-            sum_nalog = self.cost*proc*0.01*0.13
+            sum_proc = self.cost * 0.003
+            sum_nalog = self.cost * proc * 0.01 * 0.13
             sum = self.cost - sum_proc - sum_nalog
             if printer:
-                print(f'Продажа \'{self.name}\'  {self.cost}\nПолучишь: {sum}, проценты: {sum_proc}, налог: {sum_nalog}')
+                print(
+                    f'Продажа \'{self.name}\'  {self.cost}\nПолучишь: {sum}, проценты: {sum_proc}, налог: {sum_nalog}')
             return sum
         else:
             sum_proc = self.cost * 0.003
@@ -109,8 +111,8 @@ if __name__ == '__main__':
     sum = 0
     sum_ob = 0
     for i in range(0, len(c.case)):
-        if i in [2,6]:
-            sum += c.case[i].sum_change(False)*c.cur_usd
+        if i in [2, 6]:
+            sum += c.case[i].sum_change(False) * c.cur_usd
             sum_ob += c.case[i].sale(False) * c.cur_usd
         else:
             sum += c.case[i].sum_change(False)
